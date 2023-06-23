@@ -2,9 +2,17 @@ export const toppingsSorter = (toppingsArray) => {
     var uniqueToppings = [];
 
     for(var value of toppingsArray){
-        // alphabetically sorts a pizza's toppings
-        const stringValue = value.sort().toString().replaceAll(',', ', ');
-
+        // alphabetically sorts a pizza's toppings and capitalizes the first letter of each word
+        const stringValue = value
+                .sort()
+                .toString()
+                .toLowerCase()
+                .split(' ')
+                .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                .join(' ')
+                .split(',')
+                .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                .join(', ');
         // checks if this pizza's toppings already exists
         const exists = uniqueToppings.map(e => e.toppings).indexOf(stringValue);
 

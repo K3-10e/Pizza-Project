@@ -12,7 +12,7 @@
 - **@mui/x-data-grid**
     - Prebuilt, customizable table
 - **antd**
-    - Prebuilt, customizable react components (must add `import 'antd/dist/antd.css';` to index.js)
+    - Prebuilt, customizable react components
 - **react-hot-toast**
     - Customizable notifications
 
