@@ -22,7 +22,7 @@ const Home = () => {
       align: 'center',
     },
     {
-      title: 'Count',
+      title: 'Times Ordered',
       dataIndex: 'count',
       align: 'center',
     },
